@@ -15,9 +15,9 @@ function buscar() {
         return response.json();
     })
     .then(dados => {
-        document.querySelector('#pokeNome').innerHTML = dados.name;
-        document.querySelector('#pokeID').innerHTML = dados.id;
-        document.querySelector('#pokeImg').src = dados.sprites.front_default;
+        document.querySelector('#pkmName').innerHTML = "Nome: " + dados.name.charAt(0).toUpperCase() + dados.name.slice(1);
+        document.querySelector('#pkmId').innerHTML = "ID: " + dados.id;
+        document.querySelector('#pkmImg').src = dados.sprites.front_default;
         document.querySelector('#mensagem').innerHTML = ""; // Limpa a mensagem de erro, se houver
     })
     .catch(error => {
