@@ -1,7 +1,7 @@
 function buscar() {
     let nome = document.querySelector('#nome').value.trim();
 
-    // Verifica se o campo de entrada está vazio
+    // Faz a verificação se o campo de entrada está vazio mesmo
     if (nome === "") {
         document.querySelector('#mensagem').innerHTML = "Digite um nome de Pokémon.";
         return;
