@@ -18,7 +18,7 @@ function buscar() {
         document.querySelector('#pkmName').innerHTML = "Nome: " + dados.name.charAt(0).toUpperCase() + dados.name.slice(1);
         document.querySelector('#pkmId').innerHTML = "ID: " + dados.id;
         document.querySelector('#pkmImg').src = dados.sprites.front_default;
-        document.querySelector('#mensagem').innerHTML = ""; // Limpa a mensagem de erro, se houver
+        document.querySelector('#mensagem').innerHTML = ""; // Limpa a mensagem de erro, se tiver né kakaka
     })
     .catch(error => {
         document.querySelector('#mensagem').innerHTML = "Tente novamente. Pokémon não encontrado.";
