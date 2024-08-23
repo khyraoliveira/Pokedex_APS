@@ -1,10 +1,12 @@
 # Pokédex - ADS29
 
-Este projeto é uma aplicação web simples que utiliza a [PokéAPI](https://pokeapi.co/) para buscar e exibir informações sobre Pokémon. O objetivo é criar uma interface interativa onde os usuários possam pesquisar por Pokémon e visualizar detalhes como nome, ID e imagem.
+Este projeto é uma aplicação web simples que utiliza a [PokéAPI](https://pokeapi.co/) para buscar e exibir informações sobre Pokémon.
+O objetivo é criar uma interface interativa onde os usuários possam pesquisar por Pokémon e visualizar detalhes como nome, ID e imagem.
 
 ## Descrição Geral
 
-A Pokédex é uma aplicação web responsiva que permite aos usuários buscar informações sobre Pokémon através de uma API pública. A aplicação é construída com HTML, CSS e JavaScript, e utiliza o Bootstrap para estilização e Font Awesome para ícones.
+A Pokédex é uma aplicação web responsiva que permite aos usuários buscar informações sobre Pokémon através de uma API pública.
+A aplicação é construída com HTML, CSS e JavaScript, e utiliza o Bootstrap para estilização e Font Awesome para ícones.
 
 ## Estrutura do Projeto
 
