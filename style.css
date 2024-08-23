@@ -3,20 +3,31 @@
     box-sizing: border-box;
     font-size: 20px
 }
+
+body {
+    background-image: url(pokedex2.jpg);
+    background-size: 30% auto; /* Ajuste o tamanho da imagem */
+    background-repeat: no-repeat;
+    background-position: top center; /* Alinha a imagem ao topo, mantendo-a centralizada horizontalmente */
+    margin: 0;
+    padding: 0;
+}
+
+
 .titulo {
-    padding-top: 10px;
     align-items: center;
     flex-direction: column;
     display: flex;
+    margin-top: 40px; /* Diminua o valor para aproximar do topo */
 }
 .form {
     padding: 10px;
-    padding-top: 50px;
+    padding-top: 23px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-
+    height: 70px;
 }
 #nome {
     width: 300px;
@@ -39,15 +50,17 @@
     padding: 10px 0;
     display: flex;
     justify-content: center;
-
+    flex-direction: column;
+    align-items: center;
 }
-.card{
+.card {
+    margin-top: 85px;
     width: 150px;
-    background: rgb(233, 233, 233);
-    border-color: rgb(117, 117, 117);
-    border-width: 2px;
-    border-style: solid;
+    background-color: rgba(75, 211, 235, 0.5); /* Cor com transparência */
+    border: 2px solid rgba(75, 211, 235, 0.5); /* Borda sólida, sem transparência */
+    border-radius: 7px; /* Para deixar os cantos arredondados */
 }
+
 .card img{
     width: 150px;
     border-radius: 7px 7px 0 0;
@@ -61,6 +74,7 @@
 
 #mensagem {
     padding: 10px 0;
-    color: red;
+    color: rgb(124, 123, 123);
     font-size: 12px;  
+    font-weight: bold;
 }
