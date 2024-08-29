@@ -50,4 +50,4 @@ Substitua `SEU_USUARIO` pelo seu nome de usuário no GitHub.
 
 ---
 
-Obrigado por conferir o projeto da Pokédex! 🎉
+Obrigada por conferir o projeto da Pokédex! 🎉
