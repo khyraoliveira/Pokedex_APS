@@ -1,80 +1,136 @@
-*{
+
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-size: 20px
+    font-size: 20px;
 }
+
 
 body {
     background-image: url(pokedex2.jpg);
-    background-size: 30% auto; /* Ajuste o tamanho da imagem */
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: top center; /* Alinha a imagem ao topo, mantendo-a centralizada horizontalmente */
+    background-position: top center;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 
 .titulo {
-    align-items: center;
-    flex-direction: column;
     display: flex;
-    margin-top: 40px; /* Diminua o valor para aproximar do topo */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
 }
+
+
 .form {
     padding: 10px;
-    padding-top: 23px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 70px;
-}
-#nome {
-    width: 300px;
-    height: 60px;
+    width: 100%;
 }
 
-#btn{
-    width: 200px;
-    height: 60px;
-    border: none;
+
+#nome, #btn {
+    width: 80%;
+    max-width: 400px;
+    height: 50px;
+    font-size: 1rem;
+}
+
+#btn {
     background: red;
     color: white;
+    border: none;
     border-radius: 10px;
-    opacity: 1;
-    transition: 0.3s;
+    transition: opacity 0.3s;
 }
-#btn:hover {opacity: 0.6}
 
-.card-container{
-    padding: 10px 0;
+#btn:hover {
+    opacity: 0.8;
+}
+
+
+.card-container {
+    padding: 20px 0;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
-}
-.card {
-    margin-top: 85px;
-    width: 150px;
-    background-color: rgba(75, 211, 235, 0.5); /* Cor com transparência */
-    border: 2px solid rgba(75, 211, 235, 0.5); /* Borda sólida, sem transparência */
-    border-radius: 7px; /* Para deixar os cantos arredondados */
+    width: 100%;
 }
 
-.card img{
-    width: 150px;
+
+.card {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 300px;
+    background-color: rgba(75, 211, 235, 0.5);
+    border: 2px solid rgba(75, 211, 235, 0.5);
+    border-radius: 7px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
     border-radius: 7px 7px 0 0;
 }
-.card h2{
-    text-align: center;
+
+.card h2 {
     color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
+    margin: 10px 0;
 }
+
 
 #mensagem {
     padding: 10px 0;
     color: rgb(124, 123, 123);
-    font-size: 12px;  
+    font-size: 0.9rem;  
     font-weight: bold;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    #nome, #btn {
+        width: 90%;
+        height: 45px;
+    }
+
+    .card {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .card h2 {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    #nome, #btn {
+        width: 95%;
+        height: 40px;
+    }
+
+    .card {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .card h2 {
+        font-size: 0.8rem;
+    }
 }
