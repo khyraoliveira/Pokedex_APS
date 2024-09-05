@@ -17,7 +17,8 @@ function buscar() {
     .then(dados => {
         document.querySelector('#pkmName').innerHTML = "Nome: " + dados.name.charAt(0).toUpperCase() + dados.name.slice(1);
         document.querySelector('#pkmId').innerHTML = "ID: " + dados.id;
-        document.querySelector('#pkmImg').src = dados.sprites.front_default;
+        console.log(dados.sprites.versions['generation-v']['black-white'].animated.front_default);
+        document.querySelector('#pkmImg').src = dados.sprites.versions['generation-v']['black-white'].animated.front_default;
         document.querySelector('#mensagem').innerHTML = ""; // Limpa a mensagem de erro, se tiver né kakaka
     })
     .catch(error => {

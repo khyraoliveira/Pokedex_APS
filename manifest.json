@@ -1,0 +1,17 @@
+{
+    "name": "Pokedéx - ADS29",
+    "short_name": "Pokedex",
+    "description": "Pokedéx API Project for ADS29",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffcc00",
+    "icons": [
+      {
+        "src": "ic_launcher.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
